@@ -13,6 +13,7 @@
 		C94B26A71942873E0036EECA /* string.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94B26A61942873E0036EECA /* string.swift */; };
 		C94B26AA1942892B0036EECA /* char.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94B26A91942892B0036EECA /* char.swift */; };
 		C94B26AD1942C0810036EECA /* Console.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94B26AC1942C0810036EECA /* Console.swift */; };
+		C988CB771945574B002EC5E6 /* Arrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = C988CB761945574B002EC5E6 /* Arrays.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 		C94B26A61942873E0036EECA /* string.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = string.swift; sourceTree = "<group>"; };
 		C94B26A91942892B0036EECA /* char.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = char.swift; sourceTree = "<group>"; };
 		C94B26AC1942C0810036EECA /* Console.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Console.swift; sourceTree = "<group>"; };
+		C988CB761945574B002EC5E6 /* Arrays.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arrays.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,9 +116,18 @@
 		C94B26AB1942C06A0036EECA /* System */ = {
 			isa = PBXGroup;
 			children = (
+				C988CB75194556EE002EC5E6 /* Linq */,
 				C94B26AC1942C0810036EECA /* Console.swift */,
 			);
 			name = System;
+			sourceTree = "<group>";
+		};
+		C988CB75194556EE002EC5E6 /* Linq */ = {
+			isa = PBXGroup;
+			children = (
+				C988CB761945574B002EC5E6 /* Arrays.swift */,
+			);
+			name = Linq;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C94B26A71942873E0036EECA /* string.swift in Sources */,
+				C988CB771945574B002EC5E6 /* Arrays.swift in Sources */,
 				C94B26AD1942C0810036EECA /* Console.swift in Sources */,
 				C94B26AA1942892B0036EECA /* char.swift in Sources */,
 			);
