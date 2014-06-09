@@ -9,6 +9,7 @@
 import Foundation
 import Cocoa
 
+//TODO: rewrite this stuff w/ IEnumerable/etc.
 extension Array {
     func Count() -> Int {
         return self.count;
@@ -22,6 +23,22 @@ extension Array {
     
     func Where(predicate: (T) -> Bool) -> Array<T> {
         return self.filter(predicate);
+    }
+    
+    func First(predicate: (T) -> Bool) -> T {
+        return self.filter(predicate)[0];
+    }
+    
+    func FirstOrDefault(predicate: (T) -> Bool) -> T? {
+        var found = self.filter(predicate);
+        if(found.count > 0)
+        {
+            return found[0];
+        }
+        else
+        {
+            return nil;
+        }
     }
     
     mutating func Add(obj: T) {
@@ -62,5 +79,11 @@ extension Array {
     
     mutating func Insert(index: Int, obj: T) {
         self.insert(obj, atIndex: index);
+    }
+    
+    mutating func InsertRange(startingIndex: Int, objs: Array<T>) {
+        for (index, item) in enumerate(objs) {
+            self.insert(item, atIndex: (startingIndex + index));
+        }
     }
 }
