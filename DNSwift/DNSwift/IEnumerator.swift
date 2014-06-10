@@ -17,7 +17,7 @@ protocol IEnumerator: Generator {
     func next() -> T?;
 }
 
-class Enumerator<T>: IEnumerator, Generator {
+class Enumerator<T>: IEnumerator {
     var Current: T;
     
     var CurrentIndex = 0;
@@ -55,4 +55,3 @@ class Enumerator<T>: IEnumerator, Generator {
         }
     }
 }
-

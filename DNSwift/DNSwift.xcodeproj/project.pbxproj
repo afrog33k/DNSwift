@@ -16,6 +16,7 @@
 		C988CB771945574B002EC5E6 /* Arrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = C988CB761945574B002EC5E6 /* Arrays.swift */; };
 		C9FD0D7F19465D0C006B13BC /* IEnumerable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FD0D7E19465D0C006B13BC /* IEnumerable.swift */; };
 		C9FD0D8219465E42006B13BC /* IEnumerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FD0D8119465E42006B13BC /* IEnumerator.swift */; };
+		C9FD0D861946A52D006B13BC /* IList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FD0D851946A52D006B13BC /* IList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		C988CB761945574B002EC5E6 /* Arrays.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arrays.swift; sourceTree = "<group>"; };
 		C9FD0D7E19465D0C006B13BC /* IEnumerable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IEnumerable.swift; sourceTree = "<group>"; };
 		C9FD0D8119465E42006B13BC /* IEnumerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IEnumerator.swift; sourceTree = "<group>"; };
+		C9FD0D851946A52D006B13BC /* IList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 			children = (
 				C9FD0D7E19465D0C006B13BC /* IEnumerable.swift */,
 				C9FD0D8119465E42006B13BC /* IEnumerator.swift */,
+				C9FD0D851946A52D006B13BC /* IList.swift */,
 			);
 			name = Generic;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				C988CB771945574B002EC5E6 /* Arrays.swift in Sources */,
 				C94B26AD1942C0810036EECA /* Console.swift in Sources */,
 				C94B26AA1942892B0036EECA /* char.swift in Sources */,
+				C9FD0D861946A52D006B13BC /* IList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
