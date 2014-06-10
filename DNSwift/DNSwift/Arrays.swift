@@ -13,8 +13,20 @@ extension Array : IEnumerable {
         return Enumerator(objs: self);
     }
     
+    func Any() -> Bool {
+        return self.count > 0;
+    }
+    
+    func Any(predicate: (T) -> Bool) {
+        return self.Where(predicate).Any();
+    }
+    
     func Count() -> Int {
         return self.count;
+    }
+    
+    func Count(predicate: (T) -> Bool) -> Int {
+        return self.Where(predicate).Count();
     }
 
     func Where(predicate: (T) -> Bool) -> Array<T> {

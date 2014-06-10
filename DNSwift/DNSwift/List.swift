@@ -39,6 +39,36 @@ class List<T>: IList {
         return Enumerator(objs: self.Objects);
     }
     
+    
+    //LINQy stuff
+    func Where(predicate: (T) -> Bool) -> List<T> {
+        return List(objs: self.Objects.Where(predicate));
+    }
+    
+    func Any() -> Bool {
+        return Count > 0;
+    }
+    
+    func Any(predicate: (T) -> Bool) -> Bool {
+        return self.Where(predicate).Any();
+    }
+    
+    func First() -> T {
+        return self.Objects.First();
+    }
+    
+    func First(predicate: (T) -> Bool) -> T {
+        return self.Objects.First(predicate);
+    }
+    
+    func FirstOrDefault() -> T? {
+        return self.Objects.FirstOrDefault();
+    }
+    
+    func FirstOrDefault(predicate: (T) -> Bool) -> T? {
+        return self.Objects.FirstOrDefault(predicate);
+    }
+    
     //Thanks! http://ericasadun.com/2014/06/05/swift-objc-like-array-index/
     func IndexOf(obj: AnyObject) -> Int {
         let index = (Objects as NSArray).indexOfObject(obj);
