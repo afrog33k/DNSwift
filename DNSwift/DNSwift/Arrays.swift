@@ -7,10 +7,12 @@
 //
 
 import Foundation
-import Cocoa
 
-//TODO: rewrite this stuff w/ IEnumerable/etc.
-extension Array {    
+extension Array : IEnumerable {
+    func GetEnumerator() -> IEnumerator {
+        return Enumerator(objs: self);
+    }
+    
     func Count() -> Int {
         return self.count;
     }    
@@ -22,6 +24,10 @@ extension Array {
         return self.filter(predicate)[0];
     }
     
+    func First() -> T {
+        return self[0];
+    }
+    
     func FirstOrDefault(predicate: (T) -> Bool) -> T? {
         var found = self.filter(predicate);
         if(found.count > 0)
@@ -30,6 +36,15 @@ extension Array {
         }
         else
         {
+            return nil;
+        }
+    }
+    
+    func FirstOrDefault() -> T? {
+        if (self.count > 0) {
+            return self[0];
+        }
+        else {
             return nil;
         }
     }

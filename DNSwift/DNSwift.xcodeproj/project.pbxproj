@@ -17,6 +17,9 @@
 		C9FD0D7F19465D0C006B13BC /* IEnumerable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FD0D7E19465D0C006B13BC /* IEnumerable.swift */; };
 		C9FD0D8219465E42006B13BC /* IEnumerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FD0D8119465E42006B13BC /* IEnumerator.swift */; };
 		C9FD0D861946A52D006B13BC /* IList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FD0D851946A52D006B13BC /* IList.swift */; };
+		C9FD0D881946AA68006B13BC /* Enumerable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FD0D871946AA68006B13BC /* Enumerable.swift */; };
+		C9FD0D8A1946AA7B006B13BC /* Enumerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FD0D891946AA7B006B13BC /* Enumerator.swift */; };
+		C9FD0D8C1946AA9D006B13BC /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FD0D8B1946AA9D006B13BC /* List.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +46,9 @@
 		C9FD0D7E19465D0C006B13BC /* IEnumerable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IEnumerable.swift; sourceTree = "<group>"; };
 		C9FD0D8119465E42006B13BC /* IEnumerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IEnumerator.swift; sourceTree = "<group>"; };
 		C9FD0D851946A52D006B13BC /* IList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IList.swift; sourceTree = "<group>"; };
+		C9FD0D871946AA68006B13BC /* Enumerable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enumerable.swift; sourceTree = "<group>"; };
+		C9FD0D891946AA7B006B13BC /* Enumerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enumerator.swift; sourceTree = "<group>"; };
+		C9FD0D8B1946AA9D006B13BC /* List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +139,9 @@
 			isa = PBXGroup;
 			children = (
 				C988CB761945574B002EC5E6 /* Arrays.swift */,
+				C9FD0D871946AA68006B13BC /* Enumerable.swift */,
+				C9FD0D891946AA7B006B13BC /* Enumerator.swift */,
+				C9FD0D8B1946AA9D006B13BC /* List.swift */,
 			);
 			name = Linq;
 			sourceTree = "<group>";
@@ -265,7 +274,10 @@
 			files = (
 				C9FD0D7F19465D0C006B13BC /* IEnumerable.swift in Sources */,
 				C9FD0D8219465E42006B13BC /* IEnumerator.swift in Sources */,
+				C9FD0D8A1946AA7B006B13BC /* Enumerator.swift in Sources */,
+				C9FD0D8C1946AA9D006B13BC /* List.swift in Sources */,
 				C94B26A71942873E0036EECA /* string.swift in Sources */,
+				C9FD0D881946AA68006B13BC /* Enumerable.swift in Sources */,
 				C988CB771945574B002EC5E6 /* Arrays.swift in Sources */,
 				C94B26AD1942C0810036EECA /* Console.swift in Sources */,
 				C94B26AA1942892B0036EECA /* char.swift in Sources */,
