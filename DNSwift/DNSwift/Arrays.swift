@@ -15,7 +15,8 @@ extension Array : IEnumerable {
     
     func Count() -> Int {
         return self.count;
-    }    
+    }
+
     func Where(predicate: (T) -> Bool) -> Array<T> {
         return self.filter(predicate);
     }

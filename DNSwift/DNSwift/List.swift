@@ -10,7 +10,12 @@ import Foundation
 
 class List<T>: IEnumerable, IList {
     var Objects: T[];
+    //init(collection) not supported ;)
     
+    init() {
+        self.Objects = Array<T>();
+    }
+
     init(objs: T[])
     {
         self.Objects = objs;
