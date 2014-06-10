@@ -8,8 +8,10 @@
 
 import Foundation
 
-protocol IList: Sequence {
+protocol IList: IEnumerable, ICollection {
     typealias T;
+    var Count: Int { get };
+    
     func IndexOf(obj: AnyObject) -> Int;
     func Add(obj: T);
     func AddRange(objs: T[]);

@@ -8,8 +8,17 @@
 
 import Foundation
 
-class List<T>: IEnumerable, IList {
+class List<T>: IList {
     var Objects: T[];
+    
+    var Count: Int {
+        get {
+            return Objects.count;
+        }
+    };
+    
+    var IsReadOnly: Bool { get { return false; } };
+    
     //init(collection) not supported ;)
     
     init() {
@@ -36,8 +45,22 @@ class List<T>: IEnumerable, IList {
         return (index == NSNotFound) ? -1 : index;
     }
     
-    func Add(obj: T) {
-        Objects.append(obj);
+    func Add(item: T) {
+        Objects.append(item);
+    }
+    
+    func Clear() {
+        Objects.removeAll(keepCapacity: false);
+    }
+    
+    func Contains(item: AnyObject) -> Bool {
+        return ((self.Objects as NSArray).indexOfObject(item) != NSNotFound);
+    }
+    
+    func CopyTo(inout array: T[], arrayIndex: Int) {
+        for (index, item) in enumerate(Objects) {
+            array.insert(item, atIndex: (index + arrayIndex));
+        }
     }
     
     func AddRange(objs: Array<T>) {

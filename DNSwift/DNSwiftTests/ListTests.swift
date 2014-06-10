@@ -8,7 +8,6 @@
 
 import XCTest
 import DNSwift
-import DNSwift.System.Linq
 
 class ListTests: XCTestCase {
     override func setUp() {
@@ -23,6 +22,8 @@ class ListTests: XCTestCase {
     
     func testCreation() {
         var newList = List<String>();
+        var inittedList = List(objs: ["Hello", "Hi", "Wasup"]);
         XCTAssert(newList != nil);
+        XCTAssert(inittedList.Objects.count == 3);
     }
 }

@@ -7,11 +7,6 @@
 //
 
 import Foundation
-/*
-protocol IEnumerableImplementation: Sequence {
-    typealias T;
-    func generate() -> Enumerator<T>;
-}*/
 
 class Enumerable<T> : IEnumerable {
     var Objects: Array<T>;
