@@ -112,9 +112,46 @@ class List<T>: IList {
         return self.Where(predicate);
     }
     
-    //FindIndex(predicate)
-    //FindIndex(Int, predicate)
-    //FindIndex(Int, Int, predicate)
+    func FindIndex(predicate: (T) -> Bool) -> Int {
+        for (index, item) in enumerate(Objects) {
+            if(predicate(item)) {
+                return index;
+            }
+        }
+        return -1;
+    }
+    
+    //TODO: rewrite the next two so they don't enumerate the whole thing.
+    //something with for i in 0..count
+    func FindIndex(startIndex: Int, predicate: (T) -> Bool) -> Int {
+        for (index, item) in enumerate(Objects) {
+            if(index < startIndex)
+            {
+                continue;
+            }
+            
+            if(predicate(item)) {
+                return index;
+            }
+        }
+        return -1;
+    }
+    
+    func FindIndex(startIndex: Int, count: Int, predicate: (T) -> Bool) -> Int {
+        for(index, item) in enumerate(Objects) {
+            if(index < startIndex) {
+                continue;
+            }
+            if(index > (startIndex + count)) {
+                break;
+            }
+            
+            if(predicate(item)) {
+                return index;
+            }
+        }
+        return -1;
+    }
     
     func FindLast(predicate: (T) -> Bool) -> T {
         return self.Where(predicate).Last();
@@ -233,12 +270,4 @@ class List<T>: IList {
     func FirstOrDefault(predicate: (T) -> Bool) -> T? {
         return self.Objects.FirstOrDefault(predicate);
     }
-    
-    func CopyTo(inout array: T[], arrayIndex: Int) {
-        for (index, item) in enumerate(Objects) {
-            array.insert(item, atIndex: (index + arrayIndex));
-        }
-    }
-    
-    
 }

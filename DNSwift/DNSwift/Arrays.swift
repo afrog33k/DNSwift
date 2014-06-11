@@ -17,9 +17,9 @@ extension Array : IEnumerable {
         return self.count > 0;
     }
     
-    func Any(predicate: (T) -> Bool) {
-        return self.Where(predicate).Any();
-    }
+    /*func Any(predicate: (T) -> Bool) {
+        return self.Count(predicate) as Int > 0;
+    }*/
     
     func Count() -> Int {
         return self.count;
