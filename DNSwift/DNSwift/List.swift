@@ -56,7 +56,6 @@ class List<T>: IList {
     //BinarySearch(T)
     //BinarySearch(T, IComparer<T>)
     //BinarySearch(Int, Int, T, IComparer<T>)
-    //Clear
     
     func Clear() {
         Objects.removeAll(keepCapacity: false);
@@ -74,10 +73,30 @@ class List<T>: IList {
         return newList;
     }
     
-    //CopyTo(T[])
-    //CopyTo(T[], Int)
-    //CopyTo(Int, T[], Int, Int)
-    //Equals
+    func CopyTo(inout array: T[]) {
+        array.removeAll(keepCapacity: false);
+        for item in Objects {
+            array.append(item);
+        }
+    }
+    
+    func CopyTo(inout array: T[], arrayIndex: Int) {
+        for (index, item) in enumerate(Objects) {
+            array.insert(item, atIndex: arrayIndex + index);
+        }
+    }
+    
+    func CopyTo(index: Int, inout array: T[], arrayIndex: Int, count: Int) {
+        for i in 0..count {
+            if(index + i <= Objects.count) {
+                array.insert(Objects[(index + i)], atIndex: i + arrayIndex);
+            }
+        }
+    }
+    
+    func Equals(obj: NSObject) -> Bool {
+        return obj === self;
+    }
     
     func Exists(predicate: (T) -> Bool) -> Bool {
         return self.Any(predicate);
