@@ -215,7 +215,10 @@ class List<T>: IList {
         }
     }
     
-    //Reverse
+    func Reverse() -> List<T> {
+        return List(objs: Objects.reverse());
+    }
+    
     //Reverse(Int, Int)
     //Sort()
     //Sort(comparison)
