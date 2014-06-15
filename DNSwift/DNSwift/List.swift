@@ -61,8 +61,8 @@ class List<T>: IList {
         Objects.removeAll(keepCapacity: false);
     }
     
-    func Contains(item: AnyObject) -> Bool {
-        return self.IndexOf(item) != -1;
+    func Contains(item: T) -> Bool {
+        return contains(Objects, item);
     }
     
     func ConvertAll<O>() -> List<O> {
@@ -165,10 +165,10 @@ class List<T>: IList {
     //GetRange
     //GetType
     
-    //Thanks! http://ericasadun.com/2014/06/05/swift-objc-like-array-index/
-    func IndexOf(obj: AnyObject) -> Int {
-        let index = (Objects as NSArray).indexOfObject(obj);
-        return (index == NSNotFound) ? -1 : index;
+    //Thanks! http://practicalswift.com/2014/06/14/the-swift-standard-library-list-of-built-in-functions/
+    func IndexOf(obj: T) -> Int {
+        var index = find(Objects, obj);
+        return (index == nil) ? -1 : index;
     }
     
     //IndexOf(T, Int)
@@ -189,7 +189,7 @@ class List<T>: IList {
     //LastIndexOf(T, Int, Int)
     //MemberwiseClone
     
-    func Remove(obj: AnyObject) {
+    func Remove(obj: T) {
         Objects.removeAtIndex(self.IndexOf(obj));
     }
     
@@ -209,8 +209,8 @@ class List<T>: IList {
         Objects.removeAtIndex(index);
     }
     
-    func RemoveRange(objs: Array<AnyObject>) {
-        for obj: AnyObject in objs {
+    func RemoveRange(objs: Array<T>) {
+        for obj: T in objs {
             self.Remove(obj);
         }
     }
