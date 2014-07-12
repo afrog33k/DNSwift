@@ -101,6 +101,7 @@
 				C94B268F194287230036EECA /* DNSwift.h */,
 				C94B268D194287230036EECA /* Supporting Files */,
 				C94B26A61942873E0036EECA /* string.swift */,
+				C988CB761945574B002EC5E6 /* Arrays.swift */,
 				C94B26A91942892B0036EECA /* char.swift */,
 			);
 			path = DNSwift;
@@ -145,7 +146,6 @@
 		C988CB75194556EE002EC5E6 /* Linq */ = {
 			isa = PBXGroup;
 			children = (
-				C988CB761945574B002EC5E6 /* Arrays.swift */,
 				C9FD0D871946AA68006B13BC /* Enumerable.swift */,
 				C9FD0D891946AA7B006B13BC /* Enumerator.swift */,
 				C9FD0D8B1946AA9D006B13BC /* List.swift */,

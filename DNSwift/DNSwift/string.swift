@@ -14,7 +14,7 @@ extension String {
         return self;
     }
     
-    func Split(splitAt: String) -> String[] {
+    func Split(splitAt: String) -> [String] {
         return self.componentsSeparatedByString(splitAt);
     }
     

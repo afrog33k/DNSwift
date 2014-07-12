@@ -9,8 +9,8 @@
 import Foundation
 
 extension Array : IEnumerable {
-    func IndexOf(item: T) {
-        return find(self, T);
+    func IndexOf(item: T) -> Int {
+        return find(self, item);
     }
 
     func GetEnumerator() -> IEnumerator {

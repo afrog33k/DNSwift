@@ -20,4 +20,6 @@ class Console {
         var inputData = keyboard.availableData
         return NSString(data: inputData, encoding:NSUTF8StringEncoding).stringByTrimmingCharactersInSet(NSCharacterSet.newlineCharacterSet());
     }
+    
+    //TODO: Swift doesn't seem to have great support for a lot of console stuff, add more later
 }
