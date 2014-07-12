@@ -447,6 +447,7 @@
 				C979A6F31970B1EA00D3781A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C979A6F41970B1EA00D3781A /* Build configuration list for PBXNativeTarget "SystemTests" */ = {
 			isa = XCConfigurationList;
@@ -455,6 +456,7 @@
 				C979A6F61970B1EA00D3781A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
