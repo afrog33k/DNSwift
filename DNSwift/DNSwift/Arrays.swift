@@ -9,12 +9,12 @@
 import Foundation
 
 extension Array : IEnumerable {
-    func IndexOf(item: T) -> Int {
-        return find(self, item);
+    func IndexOf(item: T) -> Int? {
+        return find(self, item) as Int?;
     }
 
-    func GetEnumerator() -> IEnumerator {
-        return Enumerator(objs: self);
+    func GetEnumerator<IE:IEnumerator>() -> IE {
+        return Enumerator(objs: self) as IE;
     }
     
     func Any() -> Bool {
