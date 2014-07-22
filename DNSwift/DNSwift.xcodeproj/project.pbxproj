@@ -1,0 +1,411 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C9C19B33197E15D1009193E8 /* DNSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = C9C19B32197E15D1009193E8 /* DNSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9C19B39197E15D1009193E8 /* DNSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C19B2D197E15D1009193E8 /* DNSwift.framework */; };
+		C9C19B40197E15D1009193E8 /* DNSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C19B3F197E15D1009193E8 /* DNSwiftTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C9C19B3A197E15D1009193E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9C19B24197E15D1009193E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9C19B2C197E15D1009193E8;
+			remoteInfo = DNSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C9C19B2D197E15D1009193E8 /* DNSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DNSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9C19B31197E15D1009193E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9C19B32197E15D1009193E8 /* DNSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNSwift.h; sourceTree = "<group>"; };
+		C9C19B38197E15D1009193E8 /* DNSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DNSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9C19B3E197E15D1009193E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9C19B3F197E15D1009193E8 /* DNSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNSwiftTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C9C19B29197E15D1009193E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9C19B35197E15D1009193E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9C19B39197E15D1009193E8 /* DNSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C9C19B23197E15D1009193E8 = {
+			isa = PBXGroup;
+			children = (
+				C9C19B2F197E15D1009193E8 /* DNSwift */,
+				C9C19B3C197E15D1009193E8 /* DNSwiftTests */,
+				C9C19B2E197E15D1009193E8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C9C19B2E197E15D1009193E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9C19B2D197E15D1009193E8 /* DNSwift.framework */,
+				C9C19B38197E15D1009193E8 /* DNSwiftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9C19B2F197E15D1009193E8 /* DNSwift */ = {
+			isa = PBXGroup;
+			children = (
+				C9C19B32197E15D1009193E8 /* DNSwift.h */,
+				C9C19B30197E15D1009193E8 /* Supporting Files */,
+			);
+			path = DNSwift;
+			sourceTree = "<group>";
+		};
+		C9C19B30197E15D1009193E8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9C19B31197E15D1009193E8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C9C19B3C197E15D1009193E8 /* DNSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				C9C19B3F197E15D1009193E8 /* DNSwiftTests.swift */,
+				C9C19B3D197E15D1009193E8 /* Supporting Files */,
+			);
+			path = DNSwiftTests;
+			sourceTree = "<group>";
+		};
+		C9C19B3D197E15D1009193E8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9C19B3E197E15D1009193E8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C9C19B2A197E15D1009193E8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9C19B33197E15D1009193E8 /* DNSwift.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C9C19B2C197E15D1009193E8 /* DNSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9C19B43197E15D1009193E8 /* Build configuration list for PBXNativeTarget "DNSwift" */;
+			buildPhases = (
+				C9C19B28197E15D1009193E8 /* Sources */,
+				C9C19B29197E15D1009193E8 /* Frameworks */,
+				C9C19B2A197E15D1009193E8 /* Headers */,
+				C9C19B2B197E15D1009193E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DNSwift;
+			productName = DNSwift;
+			productReference = C9C19B2D197E15D1009193E8 /* DNSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C9C19B37197E15D1009193E8 /* DNSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9C19B46197E15D1009193E8 /* Build configuration list for PBXNativeTarget "DNSwiftTests" */;
+			buildPhases = (
+				C9C19B34197E15D1009193E8 /* Sources */,
+				C9C19B35197E15D1009193E8 /* Frameworks */,
+				C9C19B36197E15D1009193E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9C19B3B197E15D1009193E8 /* PBXTargetDependency */,
+			);
+			name = DNSwiftTests;
+			productName = DNSwiftTests;
+			productReference = C9C19B38197E15D1009193E8 /* DNSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9C19B24197E15D1009193E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Matthew S";
+				TargetAttributes = {
+					C9C19B2C197E15D1009193E8 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					C9C19B37197E15D1009193E8 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = C9C19B2C197E15D1009193E8;
+					};
+				};
+			};
+			buildConfigurationList = C9C19B27197E15D1009193E8 /* Build configuration list for PBXProject "DNSwift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C9C19B23197E15D1009193E8;
+			productRefGroup = C9C19B2E197E15D1009193E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9C19B2C197E15D1009193E8 /* DNSwift */,
+				C9C19B37197E15D1009193E8 /* DNSwiftTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C9C19B2B197E15D1009193E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9C19B36197E15D1009193E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9C19B28197E15D1009193E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9C19B34197E15D1009193E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9C19B40197E15D1009193E8 /* DNSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C9C19B3B197E15D1009193E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9C19B2C197E15D1009193E8 /* DNSwift */;
+			targetProxy = C9C19B3A197E15D1009193E8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C9C19B41197E15D1009193E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C9C19B42197E15D1009193E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C9C19B44197E15D1009193E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DNSwift/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C9C19B45197E15D1009193E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DNSwift/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C9C19B47197E15D1009193E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DNSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C9C19B48197E15D1009193E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DNSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C9C19B27197E15D1009193E8 /* Build configuration list for PBXProject "DNSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9C19B41197E15D1009193E8 /* Debug */,
+				C9C19B42197E15D1009193E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9C19B43197E15D1009193E8 /* Build configuration list for PBXNativeTarget "DNSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9C19B44197E15D1009193E8 /* Debug */,
+				C9C19B45197E15D1009193E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C9C19B46197E15D1009193E8 /* Build configuration list for PBXNativeTarget "DNSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9C19B47197E15D1009193E8 /* Debug */,
+				C9C19B48197E15D1009193E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C9C19B24197E15D1009193E8 /* Project object */;
+}
