@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>System.xcscheme</key>
+		<key>DNSwift.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>C9C19B04197E0F9D009193E8</key>
+		<key>C98EBA471986F0EF00DCC6C9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C9C19B0F197E0F9D009193E8</key>
+		<key>C98EBA521986F0EF00DCC6C9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
