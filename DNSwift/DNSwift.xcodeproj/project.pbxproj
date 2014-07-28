@@ -12,6 +12,8 @@
 		C98EBA651986F10900DCC6C9 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98EBA641986F10900DCC6C9 /* StringExtensions.swift */; };
 		C98EBA671986F1B800DCC6C9 /* StringExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98EBA661986F1B800DCC6C9 /* StringExtensionTests.swift */; };
 		C98EBA681986F47D00DCC6C9 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98EBA641986F10900DCC6C9 /* StringExtensions.swift */; };
+		C98EBA6A1986FAA600DCC6C9 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98EBA691986FAA600DCC6C9 /* ArrayExtensions.swift */; };
+		C98EBA6B1986FAA600DCC6C9 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98EBA691986FAA600DCC6C9 /* ArrayExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +34,7 @@
 		C98EBA591986F0EF00DCC6C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = /Users/matt/Repos/DNSwift/DNSwift/DNSwiftTests/Info.plist; sourceTree = "<absolute>"; };
 		C98EBA641986F10900DCC6C9 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringExtensions.swift; path = /Users/matt/Repos/DNSwift/DNSwift/DNSwift/StringExtensions.swift; sourceTree = "<absolute>"; };
 		C98EBA661986F1B800DCC6C9 /* StringExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringExtensionTests.swift; path = /Users/matt/Repos/DNSwift/DNSwift/DNSwiftTests/StringExtensionTests.swift; sourceTree = "<absolute>"; };
+		C98EBA691986FAA600DCC6C9 /* ArrayExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArrayExtensions.swift; path = /Users/matt/Repos/DNSwift/DNSwift/DNSwift/ArrayExtensions.swift; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,7 @@
 				C98EBA4D1986F0EF00DCC6C9 /* DNSwift.h */,
 				C98EBA4B1986F0EF00DCC6C9 /* Supporting Files */,
 				C98EBA641986F10900DCC6C9 /* StringExtensions.swift */,
+				C98EBA691986FAA600DCC6C9 /* ArrayExtensions.swift */,
 			);
 			name = DNSwift;
 			path = /Users/matt/Repos/DNSwift/DNSwift/DNSwift;
@@ -219,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C98EBA651986F10900DCC6C9 /* StringExtensions.swift in Sources */,
+				C98EBA6A1986FAA600DCC6C9 /* ArrayExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C98EBA681986F47D00DCC6C9 /* StringExtensions.swift in Sources */,
+				C98EBA6B1986FAA600DCC6C9 /* ArrayExtensions.swift in Sources */,
 				C98EBA671986F1B800DCC6C9 /* StringExtensionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
