@@ -18,13 +18,13 @@ extension String {
     //Allows for str[i] and str[i..<m]
     //Thanks! http://stackoverflow.com/questions/24092884/get-nth-character-of-a-string-in-swift-programming-language
     subscript (i: Int) -> String {
-        return String(Array(self)[i])
+        return String(Array(self)[i]);
     }
     
     subscript (r: Range<Int>) -> String {
-        var start = advance(startIndex, r.startIndex)
-            var end = advance(startIndex, r.endIndex)
-            return substringWithRange(Range(start: start, end: end))
+        var start = advance(startIndex, r.startIndex);
+        var end = advance(startIndex, r.endIndex);
+        return substringWithRange(Range(start: start, end: end));
     }
     
     func ToString() -> String {
@@ -43,16 +43,16 @@ extension String {
         return self.uppercaseString;
     }
     
-    func Trim() -> String {
-        return self.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet());
-    }
-    
     func Length() -> Int {
         return countElements(self);
     }
     
     static func Empty() -> String {
         return String();
+    }
+    
+    func Trim() -> String {
+        return self.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet());
     }
     
     //TrimEnd() and TrimStart() have pretty skech implementations - should rewrite them

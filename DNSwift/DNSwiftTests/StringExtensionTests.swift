@@ -10,6 +10,8 @@ import DNSwift;
 import XCTest;
 
 class DNSwiftTests: XCTestCase {
+    var numberString: String = "0123456789";
+    var testString: String = "Hello, 'world'! One, two, 3, ";
     
     override func setUp() {
         super.setUp()
@@ -22,20 +24,76 @@ class DNSwiftTests: XCTestCase {
     }
     
     func testStringIndex() {
-        var str = "01234";
-        var one = str[1];
+        var one = numberString[1];
         XCTAssertEqual(one, "1");
     }
     
     func testStringRange() {
-        var str = "01234";
-        var oneToThree = str[1...3];
+        var oneToThree = numberString[1...3];
         XCTAssertEqual(oneToThree, "123");
     }
     
+    func testStringTostring() {
+        XCTAssertEqual(testString, testString.ToString());
+    }
+    
+    func testStringSplit() {
+        var expected = [ "Hello", " 'world'! One", " two", " 3", " " ];
+        var results = testString.Split(",");
+        XCTAssertEqual(expected.count, results.count);
+        //TODO: loop this
+        XCTAssertEqual(expected[0], results[0]);
+        XCTAssertEqual(expected[1], results[1]);
+        XCTAssertEqual(expected[2], results[2]);
+        XCTAssertEqual(expected[3], results[3]);
+        XCTAssertEqual(expected[4], results[4]);
+    }
+    
+    var testCaseString: String = "tEStIng THe CASES of stringS";
+    
+    func testStringToLower() {
+        XCTAssertEqual(testCaseString.ToLower(), "testing the cases of strings");
+    }
+    
+    func testStringToUpper() {
+        XCTAssertEqual(testCaseString.ToUpper(), "TESTING THE CASES OF STRINGS");
+    }
+    
+    func testStringLength() {
+        XCTAssertEqual(testString.Length(), countElements(testString));
+    }
+    
+    func testStringEmpty() {
+        XCTAssertEqual(String.Empty(), "");
+    }
+    
+    var testTrimString: String = "  some text 123    ";
+    
+    func testStringTrim() {
+        XCTAssertEqual(testTrimString.Trim(), "some text 123");
+    }
+    
+    func testStringTrimEnd() {
+        XCTAssertEqual(testTrimString.TrimEnd(), "  some text 123");
+    }
+    
     func testStringTrimStart() {
-        var str = "   hello  ";
-        var trimmed = str.TrimStart();
-        XCTAssertEqual(trimmed, "hello  ");
+        XCTAssertEqual(testTrimString.TrimStart(), "some text 123    ");
+    }
+    
+    func testStringIndexOf() {
+        XCTAssertEqual(testString.IndexOf(","), 5);
+    }
+    
+    func testStringStartsWith() {
+        XCTAssert(testString.StartsWith("H"));
+        XCTAssertFalse(testString.StartsWith("h"));
+        XCTAssertFalse(testString.StartsWith("D"));
+    }
+    
+    func testStringEndsWith() {
+        XCTAssert(testString.EndsWith(" "));
+        XCTAssertFalse(testString.EndsWith("h"));
+        XCTAssertFalse(testString.EndsWith("D"));
     }
 }
