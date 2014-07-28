@@ -42,7 +42,7 @@ class ArrayExtensionTests: XCTestCase {
     }
     
     func testArrayWhere() {
-        var containsO = arr.Where({ item in item.Contains("O") });
+        var containsO = arr.Where({ item in item.Contains("o") });
         XCTAssertEqual(containsO.count, 3);
     }
 }
