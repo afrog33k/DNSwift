@@ -83,9 +83,16 @@ extension String {
     }
     
     func IndexOf(substr: String) -> Int {
-        let indexOfStr = self.rangeOfString(substr)?.startIndex;
-        return distance(self.startIndex, indexOfStr!);
+        var rangeOfStr = self.rangeOfString(substr);
+        if(rangeOfStr == nil) {
+            return -1;
+        }
+        return distance(self.startIndex, rangeOfStr!.startIndex);
         //Thanks! Sulthan @ stackoverflow 24029163
+    }
+    
+    func Contains(substr: String) -> Bool {
+        return self.IndexOf(substr) != -1;
     }
     
     func StartsWith(prefix: String) -> Bool {

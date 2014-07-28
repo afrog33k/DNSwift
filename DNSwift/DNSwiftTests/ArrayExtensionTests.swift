@@ -10,9 +10,6 @@ import DNSwift;
 import XCTest;
 
 class ArrayExtensionTests: XCTestCase {
-    var numberString: String = "0123456789";
-    var testString: String = "Hello, 'world'! One, two, 3, ";
-    
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -23,4 +20,29 @@ class ArrayExtensionTests: XCTestCase {
         super.tearDown()
     }
     
+    var arr = [ "zero", "one", "two", "three" ];
+    
+    func testArrayIndexOf() {
+        XCTAssertEqual(arr.IndexOf("two"), 2);
+        XCTAssertEqual(arr.IndexOf("doesn't exist"), -1);
+    }
+    
+    func testArrayAny() {
+        XCTAssert(arr.Any());
+        var emptyArray: [String] = [];
+        XCTAssertFalse(emptyArray.Any());
+    }
+    
+    func testArrayCount() {
+        XCTAssertEqual(arr.Count(), 4);
+    }
+    
+    func testArrayCountWithPredicate() {
+        XCTAssertEqual(arr.Count({ item in item == "one" || item == "two" }), 2);
+    }
+    
+    func testArrayWhere() {
+        var containsO = arr.Where({ item in item.Contains("O") });
+        XCTAssertEqual(containsO.count, 3);
+    }
 }

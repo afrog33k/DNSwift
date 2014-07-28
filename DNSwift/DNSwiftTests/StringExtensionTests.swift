@@ -83,6 +83,12 @@ class StringExtensionTests: XCTestCase {
     
     func testStringIndexOf() {
         XCTAssertEqual(testString.IndexOf(","), 5);
+        XCTAssertEqual(testString.IndexOf("z"), -1);
+    }
+    
+    func testStringContains() {
+        XCTAssert(testString.Contains("e"));
+        XCTAssertFalse(testString.Contains("z"));
     }
     
     func testStringStartsWith() {

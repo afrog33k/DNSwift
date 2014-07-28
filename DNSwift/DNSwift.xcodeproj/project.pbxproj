@@ -14,7 +14,6 @@
 		C98EBA681986F47D00DCC6C9 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98EBA641986F10900DCC6C9 /* StringExtensions.swift */; };
 		C98EBA6A1986FAA600DCC6C9 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98EBA691986FAA600DCC6C9 /* ArrayExtensions.swift */; };
 		C98EBA6B1986FAA600DCC6C9 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98EBA691986FAA600DCC6C9 /* ArrayExtensions.swift */; };
-		C98EBA6D1987150600DCC6C9 /* ArrayExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98EBA6C1987150600DCC6C9 /* ArrayExtensionTests.swift */; };
 		C98EBA6E1987150600DCC6C9 /* ArrayExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98EBA6C1987150600DCC6C9 /* ArrayExtensionTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,7 +36,7 @@
 		C98EBA641986F10900DCC6C9 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringExtensions.swift; path = /Users/matt/Repos/DNSwift/DNSwift/DNSwift/StringExtensions.swift; sourceTree = "<absolute>"; };
 		C98EBA661986F1B800DCC6C9 /* StringExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringExtensionTests.swift; path = /Users/matt/Repos/DNSwift/DNSwift/DNSwiftTests/StringExtensionTests.swift; sourceTree = "<absolute>"; };
 		C98EBA691986FAA600DCC6C9 /* ArrayExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArrayExtensions.swift; path = /Users/matt/Repos/DNSwift/DNSwift/DNSwift/ArrayExtensions.swift; sourceTree = "<absolute>"; };
-		C98EBA6C1987150600DCC6C9 /* ArrayExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtensionTests.swift; sourceTree = "<group>"; };
+		C98EBA6C1987150600DCC6C9 /* ArrayExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArrayExtensionTests.swift; path = /Users/matt/Repos/DNSwift/DNSwift/DNSwiftTests/ArrayExtensionTests.swift; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,7 +227,6 @@
 			files = (
 				C98EBA651986F10900DCC6C9 /* StringExtensions.swift in Sources */,
 				C98EBA6A1986FAA600DCC6C9 /* ArrayExtensions.swift in Sources */,
-				C98EBA6D1987150600DCC6C9 /* ArrayExtensionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +421,7 @@
 				C98EBA601986F0EF00DCC6C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C98EBA611986F0EF00DCC6C9 /* Build configuration list for PBXNativeTarget "DNSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -431,6 +430,7 @@
 				C98EBA631986F0EF00DCC6C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
