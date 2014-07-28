@@ -9,7 +9,7 @@
 import DNSwift;
 import XCTest;
 
-class DNSwiftTests: XCTestCase {
+class StringExtensionTests: XCTestCase {
     var numberString: String = "0123456789";
     var testString: String = "Hello, 'world'! One, two, 3, ";
     
