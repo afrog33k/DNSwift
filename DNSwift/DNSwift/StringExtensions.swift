@@ -8,12 +8,6 @@
 
 import Foundation
 
-public class Testing {
-    class func DoSomething() {
-        
-    }
-}
-
 extension String {
     //Allows for str[i] and str[i..<m]
     //Thanks! http://stackoverflow.com/questions/24092884/get-nth-character-of-a-string-in-swift-programming-language
