@@ -8,20 +8,20 @@
 
 import Foundation
 
-class Enumerable<T> : IEnumerable {
+public class Enumerable<T> : IEnumerable {
     private var Objects: Array<T>;
     
-    init() { self.Objects = Array<T>(); }
+    public init() { self.Objects = Array<T>(); }
     
-    init(objs: Array<T>) {
+    public init(objs: Array<T>) {
         self.Objects = objs;
     }
     
-    func GetEnumerator<IE where IE:IEnumerator>() -> IE {
+    public func GetEnumerator<IE where IE:IEnumerator>() -> IE {
         return Enumerator(objs: Objects) as IE;
     }
     
-    func generate() -> Enumerator<T> {
+    public func generate() -> Enumerator<T> {
         return Enumerator(objs: Objects);
     }
 }
