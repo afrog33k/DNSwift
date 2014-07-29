@@ -23,6 +23,7 @@
 		C9D515BD19871DB900B48496 /* IList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D515BC19871DB900B48496 /* IList.swift */; };
 		C9D515BF19871DEB00B48496 /* ICollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D515BE19871DEB00B48496 /* ICollection.swift */; };
 		C9D515C119871E2400B48496 /* Enumerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D515C019871E2400B48496 /* Enumerator.swift */; };
+		C9D515C319871F3500B48496 /* Enumerable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D515C219871F3500B48496 /* Enumerable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		C9D515BC19871DB900B48496 /* IList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IList.swift; sourceTree = "<group>"; };
 		C9D515BE19871DEB00B48496 /* ICollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICollection.swift; sourceTree = "<group>"; };
 		C9D515C019871E2400B48496 /* Enumerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enumerator.swift; sourceTree = "<group>"; };
+		C9D515C219871F3500B48496 /* Enumerable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enumerable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 				C9D515B819871D8500B48496 /* IEnumerator.swift */,
 				C9D515C019871E2400B48496 /* Enumerator.swift */,
 				C9D515BA19871D9200B48496 /* IEnumerable.swift */,
+				C9D515C219871F3500B48496 /* Enumerable.swift */,
 				C9D515BC19871DB900B48496 /* IList.swift */,
 				C9D515B619871D6F00B48496 /* List.swift */,
 				C9D515BE19871DEB00B48496 /* ICollection.swift */,
@@ -284,6 +287,7 @@
 				C9D515C119871E2400B48496 /* Enumerator.swift in Sources */,
 				C9D515B119871CE000B48496 /* Console.swift in Sources */,
 				C9D515B719871D6F00B48496 /* List.swift in Sources */,
+				C9D515C319871F3500B48496 /* Enumerable.swift in Sources */,
 				C98EBA6A1986FAA600DCC6C9 /* ArrayExtensions.swift in Sources */,
 				C9D515BB19871D9200B48496 /* IEnumerable.swift in Sources */,
 			);
