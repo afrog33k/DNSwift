@@ -15,7 +15,6 @@
 		C98EBA6A1986FAA600DCC6C9 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98EBA691986FAA600DCC6C9 /* ArrayExtensions.swift */; };
 		C98EBA6B1986FAA600DCC6C9 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98EBA691986FAA600DCC6C9 /* ArrayExtensions.swift */; };
 		C98EBA6E1987150600DCC6C9 /* ArrayExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98EBA6C1987150600DCC6C9 /* ArrayExtensionTests.swift */; };
-		C9D515B119871CE000B48496 /* Console.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D515B019871CE000B48496 /* Console.swift */; };
 		C9D515B319871D0900B48496 /* CharExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D515B219871D0900B48496 /* CharExtensions.swift */; };
 		C9D515B919871D8500B48496 /* IEnumerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D515B819871D8500B48496 /* IEnumerator.swift */; };
 		C9D515BB19871D9200B48496 /* IEnumerable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D515BA19871D9200B48496 /* IEnumerable.swift */; };
@@ -47,7 +46,6 @@
 		C98EBA661986F1B800DCC6C9 /* StringExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringExtensionTests.swift; path = /Users/matt/Repos/DNSwift/DNSwift/DNSwiftTests/StringExtensionTests.swift; sourceTree = "<absolute>"; };
 		C98EBA691986FAA600DCC6C9 /* ArrayExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArrayExtensions.swift; path = /Users/matt/Repos/DNSwift/DNSwift/DNSwift/ArrayExtensions.swift; sourceTree = "<absolute>"; };
 		C98EBA6C1987150600DCC6C9 /* ArrayExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArrayExtensionTests.swift; path = /Users/matt/Repos/DNSwift/DNSwift/DNSwiftTests/ArrayExtensionTests.swift; sourceTree = "<absolute>"; };
-		C9D515B019871CE000B48496 /* Console.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Console.swift; sourceTree = "<group>"; };
 		C9D515B219871D0900B48496 /* CharExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharExtensions.swift; sourceTree = "<group>"; };
 		C9D515B819871D8500B48496 /* IEnumerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IEnumerator.swift; sourceTree = "<group>"; };
 		C9D515BA19871D9200B48496 /* IEnumerable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IEnumerable.swift; sourceTree = "<group>"; };
@@ -143,7 +141,6 @@
 			isa = PBXGroup;
 			children = (
 				C9D515B419871D4A00B48496 /* Collections */,
-				C9D515B019871CE000B48496 /* Console.swift */,
 			);
 			name = System;
 			path = /Users/matt/Repos/DNSwift/DNSwift/DNSwift/System;
@@ -290,7 +287,6 @@
 				C9D515B319871D0900B48496 /* CharExtensions.swift in Sources */,
 				C9D515BD19871DB900B48496 /* IList.swift in Sources */,
 				C9D515C119871E2400B48496 /* Enumerator.swift in Sources */,
-				C9D515B119871CE000B48496 /* Console.swift in Sources */,
 				C9D515C319871F3500B48496 /* Enumerable.swift in Sources */,
 				C98EBA6A1986FAA600DCC6C9 /* ArrayExtensions.swift in Sources */,
 				C9D515BB19871D9200B48496 /* IEnumerable.swift in Sources */,

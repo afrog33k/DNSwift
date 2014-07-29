@@ -6,7 +6,8 @@
 //  Copyright (c) 2014 Matthew S. All rights reserved.
 //
 
-import Foundation
+//import Foundation
+import DNSwift
 
 public extension Array {// : IEnumerable {
     public func IndexOf<T: Equatable>(item: T) -> Int {
@@ -74,7 +75,7 @@ public extension Array {// : IEnumerable {
         }
     }
     
-    /*func ToList() -> List<T> {
-        return List(objs: self);
-    }*/
+    //public func ToList() -> List<T> {
+        //return List(objs: self);
+    //}
 }
