@@ -8,6 +8,6 @@
 
 import Foundation
 
-extension Character {
+public extension Character {
     
 }
