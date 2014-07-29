@@ -1,6 +1,6 @@
 import Foundation
 
-class Console {
+public class Console {
     class func Write(str: String) {
         print(str);
     }
