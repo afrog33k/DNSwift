@@ -16,14 +16,6 @@
 		C98EBA6B1986FAA600DCC6C9 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98EBA691986FAA600DCC6C9 /* ArrayExtensions.swift */; };
 		C98EBA6E1987150600DCC6C9 /* ArrayExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98EBA6C1987150600DCC6C9 /* ArrayExtensionTests.swift */; };
 		C9D515B319871D0900B48496 /* CharExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D515B219871D0900B48496 /* CharExtensions.swift */; };
-		C9D515B919871D8500B48496 /* IEnumerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D515B819871D8500B48496 /* IEnumerator.swift */; };
-		C9D515BB19871D9200B48496 /* IEnumerable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D515BA19871D9200B48496 /* IEnumerable.swift */; };
-		C9D515BD19871DB900B48496 /* IList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D515BC19871DB900B48496 /* IList.swift */; };
-		C9D515BF19871DEB00B48496 /* ICollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D515BE19871DEB00B48496 /* ICollection.swift */; };
-		C9D515C119871E2400B48496 /* Enumerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D515C019871E2400B48496 /* Enumerator.swift */; };
-		C9D515C319871F3500B48496 /* Enumerable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D515C219871F3500B48496 /* Enumerable.swift */; };
-		C9D515C519871FC700B48496 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D515C419871FC700B48496 /* Collection.swift */; };
-		C9D515C7198720B900B48496 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D515C6198720B900B48496 /* List.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,23 +30,15 @@
 
 /* Begin PBXFileReference section */
 		C98EBA481986F0EF00DCC6C9 /* DNSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DNSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C98EBA4C1986F0EF00DCC6C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "/Users/matt/Repos/DNSwift/DNSwift/DNSwift/Supporting Files/Info.plist"; sourceTree = "<absolute>"; };
-		C98EBA4D1986F0EF00DCC6C9 /* DNSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DNSwift.h; path = /Users/matt/Repos/DNSwift/DNSwift/DNSwift/DNSwift.h; sourceTree = "<absolute>"; };
+		C98EBA4C1986F0EF00DCC6C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = "DNSwift/Supporting Files/Info.plist"; sourceTree = "<group>"; };
+		C98EBA4D1986F0EF00DCC6C9 /* DNSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNSwift.h; sourceTree = "<group>"; };
 		C98EBA531986F0EF00DCC6C9 /* DNSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DNSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C98EBA591986F0EF00DCC6C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = /Users/matt/Repos/DNSwift/DNSwift/DNSwiftTests/Info.plist; sourceTree = "<absolute>"; };
-		C98EBA641986F10900DCC6C9 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringExtensions.swift; path = /Users/matt/Repos/DNSwift/DNSwift/DNSwift/StringExtensions.swift; sourceTree = "<absolute>"; };
-		C98EBA661986F1B800DCC6C9 /* StringExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringExtensionTests.swift; path = /Users/matt/Repos/DNSwift/DNSwift/DNSwiftTests/StringExtensionTests.swift; sourceTree = "<absolute>"; };
-		C98EBA691986FAA600DCC6C9 /* ArrayExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArrayExtensions.swift; path = /Users/matt/Repos/DNSwift/DNSwift/DNSwift/ArrayExtensions.swift; sourceTree = "<absolute>"; };
-		C98EBA6C1987150600DCC6C9 /* ArrayExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArrayExtensionTests.swift; path = /Users/matt/Repos/DNSwift/DNSwift/DNSwiftTests/ArrayExtensionTests.swift; sourceTree = "<absolute>"; };
-		C9D515B219871D0900B48496 /* CharExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharExtensions.swift; sourceTree = "<group>"; };
-		C9D515B819871D8500B48496 /* IEnumerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IEnumerator.swift; sourceTree = "<group>"; };
-		C9D515BA19871D9200B48496 /* IEnumerable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IEnumerable.swift; sourceTree = "<group>"; };
-		C9D515BC19871DB900B48496 /* IList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IList.swift; sourceTree = "<group>"; };
-		C9D515BE19871DEB00B48496 /* ICollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICollection.swift; sourceTree = "<group>"; };
-		C9D515C019871E2400B48496 /* Enumerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enumerator.swift; sourceTree = "<group>"; };
-		C9D515C219871F3500B48496 /* Enumerable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enumerable.swift; sourceTree = "<group>"; };
-		C9D515C419871FC700B48496 /* Collection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
-		C9D515C6198720B900B48496 /* List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
+		C98EBA591986F0EF00DCC6C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
+		C98EBA641986F10900DCC6C9 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		C98EBA661986F1B800DCC6C9 /* StringExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensionTests.swift; sourceTree = "<group>"; };
+		C98EBA691986FAA600DCC6C9 /* ArrayExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
+		C98EBA6C1987150600DCC6C9 /* ArrayExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtensionTests.swift; sourceTree = "<group>"; };
+		C9D515B219871D0900B48496 /* CharExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CharExtensions.swift; path = DNSwift/CharExtensions.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,12 +76,11 @@
 				C98EBA531986F0EF00DCC6C9 /* DNSwiftTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		C98EBA4A1986F0EF00DCC6C9 /* DNSwift */ = {
 			isa = PBXGroup;
 			children = (
-				C9D515AF19871CCD00B48496 /* System */,
 				C98EBA4D1986F0EF00DCC6C9 /* DNSwift.h */,
 				C98EBA4B1986F0EF00DCC6C9 /* Supporting Files */,
 				C98EBA641986F10900DCC6C9 /* StringExtensions.swift */,
@@ -114,8 +97,8 @@
 				C98EBA4C1986F0EF00DCC6C9 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			path = "/Users/matt/Repos/DNSwift/DNSwift/DNSwift/DNSwift/Supporting Files";
-			sourceTree = "<absolute>";
+			path = "DNSwift/Supporting Files";
+			sourceTree = "<group>";
 		};
 		C98EBA571986F0EF00DCC6C9 /* DNSwiftTests */ = {
 			isa = PBXGroup;
@@ -124,52 +107,16 @@
 				C98EBA661986F1B800DCC6C9 /* StringExtensionTests.swift */,
 				C98EBA6C1987150600DCC6C9 /* ArrayExtensionTests.swift */,
 			);
-			name = DNSwiftTests;
-			path = /Users/matt/Repos/DNSwift/DNSwift/DNSwiftTests;
-			sourceTree = "<absolute>";
+			path = DNSwiftTests;
+			sourceTree = SOURCE_ROOT;
 		};
 		C98EBA581986F0EF00DCC6C9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
 				C98EBA591986F0EF00DCC6C9 /* Info.plist */,
 			);
-			name = "Supporting Files";
-			path = "/Users/matt/Repos/DNSwift/DNSwift/DNSwiftTests/Supporting Files";
-			sourceTree = "<absolute>";
-		};
-		C9D515AF19871CCD00B48496 /* System */ = {
-			isa = PBXGroup;
-			children = (
-				C9D515B419871D4A00B48496 /* Collections */,
-			);
-			name = System;
-			path = /Users/matt/Repos/DNSwift/DNSwift/DNSwift/System;
-			sourceTree = "<absolute>";
-		};
-		C9D515B419871D4A00B48496 /* Collections */ = {
-			isa = PBXGroup;
-			children = (
-				C9D515B519871D5C00B48496 /* Generic */,
-			);
-			name = Collections;
-			path = /Users/matt/Repos/DNSwift/DNSwift/DNSwift/System/Collections;
-			sourceTree = "<absolute>";
-		};
-		C9D515B519871D5C00B48496 /* Generic */ = {
-			isa = PBXGroup;
-			children = (
-				C9D515B819871D8500B48496 /* IEnumerator.swift */,
-				C9D515C019871E2400B48496 /* Enumerator.swift */,
-				C9D515BA19871D9200B48496 /* IEnumerable.swift */,
-				C9D515C219871F3500B48496 /* Enumerable.swift */,
-				C9D515BE19871DEB00B48496 /* ICollection.swift */,
-				C9D515C419871FC700B48496 /* Collection.swift */,
-				C9D515BC19871DB900B48496 /* IList.swift */,
-				C9D515C6198720B900B48496 /* List.swift */,
-			);
-			name = Generic;
-			path = /Users/matt/Repos/DNSwift/DNSwift/DNSwift/System/Collections/Generic;
-			sourceTree = "<absolute>";
+			path = "Supporting Files";
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -279,17 +226,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9D515BF19871DEB00B48496 /* ICollection.swift in Sources */,
 				C98EBA651986F10900DCC6C9 /* StringExtensions.swift in Sources */,
-				C9D515B919871D8500B48496 /* IEnumerator.swift in Sources */,
-				C9D515C519871FC700B48496 /* Collection.swift in Sources */,
-				C9D515C7198720B900B48496 /* List.swift in Sources */,
 				C9D515B319871D0900B48496 /* CharExtensions.swift in Sources */,
-				C9D515BD19871DB900B48496 /* IList.swift in Sources */,
-				C9D515C119871E2400B48496 /* Enumerator.swift in Sources */,
-				C9D515C319871F3500B48496 /* Enumerable.swift in Sources */,
 				C98EBA6A1986FAA600DCC6C9 /* ArrayExtensions.swift in Sources */,
-				C9D515BB19871D9200B48496 /* IEnumerable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

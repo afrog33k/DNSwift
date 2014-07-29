@@ -11,3 +11,5 @@ var namesStartingWithJ = names.Where({ name in name.StartsWith("J") });
 ```
 
 Using it with [SharpSwift](https://github.com/matthewsot/SharpSwift) allows you to directly cross-compile and use C# in Swift projects.
+
+Note - to compile it, make sure to set 
