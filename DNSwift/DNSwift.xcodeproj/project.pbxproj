@@ -163,9 +163,9 @@
 				C9D515C019871E2400B48496 /* Enumerator.swift */,
 				C9D515BA19871D9200B48496 /* IEnumerable.swift */,
 				C9D515C219871F3500B48496 /* Enumerable.swift */,
+				C9D515BE19871DEB00B48496 /* ICollection.swift */,
 				C9D515BC19871DB900B48496 /* IList.swift */,
 				C9D515B619871D6F00B48496 /* List.swift */,
-				C9D515BE19871DEB00B48496 /* ICollection.swift */,
 			);
 			name = Generic;
 			path = /Users/matt/Repos/DNSwift/DNSwift/DNSwift/System/Collections/Generic;
