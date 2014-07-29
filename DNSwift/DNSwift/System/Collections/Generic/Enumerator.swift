@@ -9,20 +9,20 @@
 import Foundation
 
 class Enumerator<T> : IEnumerator {
-    var Current: T {
+    public var Current: T {
         get {
             return Objects[CurrentIndex];
         }
     }
     
-    var CurrentIndex = 0;
-    var Objects: [T];
+    public var CurrentIndex = 0;
+    public var Objects: [T];
     
     init(objs: [T]) {
         self.Objects = objs;
     }
     
-    func MoveNext() -> Bool {
+    public func MoveNext() -> Bool {
         self.CurrentIndex = CurrentIndex + 1;
         if(CurrentIndex >= Objects.count) {
             CurrentIndex = (Objects.count - 1);
@@ -30,12 +30,13 @@ class Enumerator<T> : IEnumerator {
         }
         return true;
     }
-    func Reset() {
+    
+    public func Reset() {
         CurrentIndex = 0;
     }
     
     //Generator compliance
-    func next() -> T?
+    public func next() -> T?
     {
         if(self.MoveNext()) {
             return self.Objects[self.CurrentIndex];
@@ -46,7 +47,7 @@ class Enumerator<T> : IEnumerator {
         }
     }
     
-    func Dispose() {
+    public func Dispose() {
         
     }
 }
