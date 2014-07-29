@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Enumerator<T> : IEnumerator {
+public class Enumerator<T> : IEnumerator {
     public var Current: T {
         get {
             return Objects[CurrentIndex];
@@ -18,7 +18,7 @@ class Enumerator<T> : IEnumerator {
     public var CurrentIndex = 0;
     public var Objects: [T];
     
-    init(objs: [T]) {
+    public init(objs: [T]) {
         self.Objects = objs;
     }
     
