@@ -8,8 +8,8 @@
 
 import Foundation
 
-extension Array {// : IEnumerable {
-    func IndexOf<T: Equatable>(item: T) -> Int {
+public extension Array {// : IEnumerable {
+    public func IndexOf<T: Equatable>(item: T) -> Int {
         //looks like this is the best way to do it - http://stackoverflow.com/questions/24028860/how-to-find-index-of-list-item-in-apples-swift/24029119#24029119
         
         for (index, val) in enumerate(self) {
@@ -25,7 +25,7 @@ extension Array {// : IEnumerable {
         return Enumerator(objs: self) as IE;
     }*/
     
-    func Any() -> Bool {
+    public func Any() -> Bool {
         return self.count > 0;
     }
     
@@ -33,27 +33,27 @@ extension Array {// : IEnumerable {
     return self.Count(predicate) as Int > 0;
     }*/
     
-    func Count() -> Int {
+    public func Count() -> Int {
         return self.count;
     }
     
-    func Count(predicate: (T) -> Bool) -> Int {
+    public func Count(predicate: (T) -> Bool) -> Int {
         return self.Where(predicate).Count();
     }
     
-    func Where(predicate: (T) -> Bool) -> Array<T> {
+    public func Where(predicate: (T) -> Bool) -> Array<T> {
         return self.filter(predicate);
     }
     
-    func First() -> T {
+    public func First() -> T {
         return self[0];
     }
     
-    func First(predicate: (T) -> Bool) -> T {
+    public func First(predicate: (T) -> Bool) -> T {
         return self.filter(predicate)[0];
     }
     
-    func FirstOrDefault() -> T? {
+    public func FirstOrDefault() -> T? {
         if (self.count > 0) {
             return self[0];
         }
@@ -62,7 +62,7 @@ extension Array {// : IEnumerable {
         }
     }
     
-    func FirstOrDefault(predicate: (T) -> Bool) -> T? {
+    public func FirstOrDefault(predicate: (T) -> Bool) -> T? {
         var found = self.filter(predicate);
         if(found.count > 0)
         {
