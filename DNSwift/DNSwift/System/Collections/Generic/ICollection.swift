@@ -9,7 +9,7 @@
 import Foundation
 
 //http://msdn.microsoft.com/en-us/library/92t2ye13%28v=vs.110%29.aspx
-protocol ICollection: IEnumerable {
+public protocol ICollection: IEnumerable {
     typealias T;
     
     //Properties
