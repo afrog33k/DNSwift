@@ -16,11 +16,12 @@ protocol ICollection: IEnumerable {
     var Count: Int { get };
     var IsReadOnly: Bool { get };
     
-    //TODO: replace some of these AnyObjects with T
     //Methods
     func Add(item: T);
     func Clear();
     func Contains(item: T) -> Bool;
+    func CopyTo(inout array: [T]);
     func CopyTo(inout array: [T], arrayIndex: Int);
-    func Remove(item: AnyObject);
+    func CopyTo(index: Int, inout array: [T], arrayIndex: Int, count: Int);
+    func Remove(item: T);
 }
