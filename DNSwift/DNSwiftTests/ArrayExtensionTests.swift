@@ -45,4 +45,26 @@ class ArrayExtensionTests: XCTestCase {
         var containsO = arr.Where({ item in item.Contains("o") });
         XCTAssertEqual(containsO.count, 3);
     }
+    
+    func testArrayFirst() {
+        XCTAssertEqual(arr.First(), "zero");
+    }
+    
+    func testArrayFirstWithPredicate() {
+        XCTAssertEqual(arr.First({ item in !item.Contains("z") }), "one");
+    }
+    
+    func testArrayFirstOrDefault() {
+        XCTAssertEqual(arr.FirstOrDefault()!, "zero");
+        
+        var emptyArr: [String] = [];
+        XCTAssertNil(emptyArr.FirstOrDefault());
+    }
+    
+    func testArrayFirstOrDefaultWithPredicate() {
+        XCTAssertEqual(arr.FirstOrDefault({ item in !item.Contains("e") })!, "two");
+        
+        var emptyArr: [String] = [];
+        XCTAssertNil(arr.FirstOrDefault({ item in !item.Contains("o") && !item.Contains("e") }));
+    }
 }

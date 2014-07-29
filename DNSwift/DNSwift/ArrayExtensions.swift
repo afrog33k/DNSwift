@@ -45,12 +45,21 @@ extension Array {// : IEnumerable {
         return self.filter(predicate);
     }
     
+    func First() -> T {
+        return self[0];
+    }
+    
     func First(predicate: (T) -> Bool) -> T {
         return self.filter(predicate)[0];
     }
     
-    func First() -> T {
-        return self[0];
+    func FirstOrDefault() -> T? {
+        if (self.count > 0) {
+            return self[0];
+        }
+        else {
+            return nil;
+        }
     }
     
     func FirstOrDefault(predicate: (T) -> Bool) -> T? {
@@ -61,15 +70,6 @@ extension Array {// : IEnumerable {
         }
         else
         {
-            return nil;
-        }
-    }
-    
-    func FirstOrDefault() -> T? {
-        if (self.count > 0) {
-            return self[0];
-        }
-        else {
             return nil;
         }
     }
