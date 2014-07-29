@@ -8,69 +8,69 @@
 
 import Foundation
 
-class List<E where E:Equatable>: IList {
+public class List<E where E:Equatable>: IList {
     typealias T = E;
     
     private var Objects: [T];
     
-    var Count: Int {
+    public var Count: Int {
         get {
             return Objects.count
         }
     };
-    var Capacity: Int; //todo: consider implementing this
+    public var Capacity: Int; //todo: consider implementing this
     
-    init() {
+    public init() {
         Capacity = Int.max;
         self.Objects = Array<T>();
     }
     
-    init(objs: [T])
+    public init(objs: [T])
     {
         Capacity = Int.max;
         self.Objects = objs;
     }
 
     //IEnumerable
-    func GetEnumerator<IE where IE:IEnumerator>() -> IE {
+    public func GetEnumerator<IE where IE:IEnumerator>() -> IE {
         return Enumerator(objs: Objects) as IE;
     }
     
-    func generate() -> Enumerator<T> {
+    public func generate() -> Enumerator<T> {
         return Enumerator(objs: self.Objects);
     }
     
     //ICollection
-    var IsReadOnly: Bool { get { return false; } };
+    public var IsReadOnly: Bool { get { return false; } };
     
     //TODO: replace some of these AnyObjects with T
     //Methods
-    func Add(item: T) {
+    public func Add(item: T) {
         Objects.append(item);
     }
     
-    func Clear() {
+    public func Clear() {
         Objects.removeAll(keepCapacity: false);
     }
     
-    func Contains(item: T) -> Bool {
+    public func Contains(item: T) -> Bool {
         return contains(Objects, item);
     }
     
-    func CopyTo(inout array: [T]) {
+    public func CopyTo(inout array: [T]) {
         array.removeAll(keepCapacity: false);
         for item in Objects {
             array.append(item);
         }
     }
     
-    func CopyTo(inout array: [T], arrayIndex: Int) {
+    public func CopyTo(inout array: [T], arrayIndex: Int) {
         for (index, item) in enumerate(Objects) {
             array.insert(item, atIndex: arrayIndex + index);
         }
     }
     
-    func CopyTo(index: Int, inout array: [T], arrayIndex: Int, count: Int) {
+    public func CopyTo(index: Int, inout array: [T], arrayIndex: Int, count: Int) {
         for i in 0..<count {
             if(index + i <= Objects.count) {
                 array.insert(Objects[(index + i)], atIndex: i + arrayIndex);
@@ -78,16 +78,16 @@ class List<E where E:Equatable>: IList {
         }
     }
     
-    func Remove(item: T) {
+    public func Remove(item: T) {
         Objects.removeAtIndex(Objects.IndexOf(item));
     }
     
     //IList
-    func IndexOf(obj: T) -> Int {
+    public func IndexOf(obj: T) -> Int {
         return Objects.IndexOf(obj);
     }
     
-    func AddRange(objs: Array<T>) {
+    public func AddRange(objs: Array<T>) {
         for obj in objs {
             Objects.append(obj);
         }
@@ -98,7 +98,7 @@ class List<E where E:Equatable>: IList {
     //BinarySearch(T, IComparer<T>)
     //BinarySearch(Int, Int, T, IComparer<T>)
     
-    func ConvertAll<O>() -> List<O> {
+    public func ConvertAll<O>() -> List<O> {
         var newList = List<O>();
         for item in Objects {
             newList.Add(item as O);
@@ -106,25 +106,25 @@ class List<E where E:Equatable>: IList {
         return newList;
     }
     
-    func Equals(obj: NSObject) -> Bool {
+    public func Equals(obj: NSObject) -> Bool {
         return obj === self;
     }
     
-    func Exists(predicate: (T) -> Bool) -> Bool {
+    public func Exists(predicate: (T) -> Bool) -> Bool {
         return self.Any(predicate);
     }
     
     //Finalize
     
-    func Find(predicate: (T) -> Bool) -> T {
+    public func Find(predicate: (T) -> Bool) -> T {
         return self.First(predicate);
     }
     
-    func FindAll(predicate: (T) -> Bool) -> List<T> {
+    public func FindAll(predicate: (T) -> Bool) -> List<T> {
         return self.Where(predicate);
     }
     
-    func FindIndex(predicate: (T) -> Bool) -> Int {
+    public func FindIndex(predicate: (T) -> Bool) -> Int {
         for (index, item) in enumerate(Objects) {
             if(predicate(item)) {
                 return index;
@@ -135,7 +135,7 @@ class List<E where E:Equatable>: IList {
     
     //TODO: rewrite the next two so they don't enumerate the whole thing.
     //something with for i in 0..count
-    func FindIndex(startIndex: Int, predicate: (T) -> Bool) -> Int {
+    public func FindIndex(startIndex: Int, predicate: (T) -> Bool) -> Int {
         for (index, item) in enumerate(Objects) {
             if(index < startIndex)
             {
@@ -149,7 +149,7 @@ class List<E where E:Equatable>: IList {
         return -1;
     }
     
-    func FindIndex(startIndex: Int, count: Int, predicate: (T) -> Bool) -> Int {
+    public func FindIndex(startIndex: Int, count: Int, predicate: (T) -> Bool) -> Int {
         for(index, item) in enumerate(Objects) {
             if(index < startIndex) {
                 continue;
@@ -165,7 +165,7 @@ class List<E where E:Equatable>: IList {
         return -1;
     }
     
-    func FindLast(predicate: (T) -> Bool) -> T {
+    public func FindLast(predicate: (T) -> Bool) -> T {
         return self.Where(predicate).Last();
     }
     
@@ -179,11 +179,11 @@ class List<E where E:Equatable>: IList {
     //IndexOf(T, Int)
     //IndexOf(T, Int, Int)
     
-    func Insert(index: Int, obj item: T) {
+    public func Insert(index: Int, obj item: T) {
         Objects.insert(item, atIndex: index);
     }
     
-    func InsertRange(startingIndex: Int, objs: Array<T>) {
+    public func InsertRange(startingIndex: Int, objs: Array<T>) {
         for (index, item) in enumerate(objs) {
             Objects.insert(item, atIndex: (startingIndex + index));
         }
@@ -194,11 +194,11 @@ class List<E where E:Equatable>: IList {
     //LastIndexOf(T, Int, Int)
     //MemberwiseClone
     
-    func RemoveAll() {
+    public func RemoveAll() {
         Objects.removeAll(keepCapacity: false);
     }
     
-    func RemoveAll(predicate: (T) -> Bool) {
+    public func RemoveAll(predicate: (T) -> Bool) {
         for (index, item) in enumerate(Objects) {
             if(predicate(item)) {
                 Objects.removeAtIndex(index);
@@ -206,17 +206,17 @@ class List<E where E:Equatable>: IList {
         }
     }
     
-    func RemoveAt(index: Int) {
+    public func RemoveAt(index: Int) {
         Objects.removeAtIndex(index);
     }
     
-    func RemoveRange(objs: Array<T>) {
+    public func RemoveRange(objs: Array<T>) {
         for obj: T in objs {
             self.Remove(obj);
         }
     }
     
-    func Reverse() -> List<T> {
+    public func Reverse() -> List<T> {
         return List(objs: Objects.reverse());
     }
     
@@ -226,52 +226,52 @@ class List<E where E:Equatable>: IList {
     //Sort(icomparer)
     //Sort(Int,Int,IComparer)
     
-    func ToArray() -> [T] {
+    public func ToArray() -> [T] {
         return self.Objects;
     }
     
-    func ToString() -> String {
+    public func ToString() -> String {
         //TODO: figure out what the native .NET libraries return for this
         return "List";
     }
     
     //TrimExcess
     
-    func TrueForAll(predicate: (T) -> Bool) -> Bool {
+    public func TrueForAll(predicate: (T) -> Bool) -> Bool {
         return self.Where(predicate).Count == self.Count;
     }
     
     //Extension methods
     
-    func Where(predicate: (T) -> Bool) -> List<T> {
+    public func Where(predicate: (T) -> Bool) -> List<T> {
         return List(objs: self.Objects.Where(predicate));
     }
     
-    func Last() -> T { //TODO nil check/count == 0
+    public func Last() -> T { //TODO nil check/count == 0
         return self.Objects[self.Count - 1];
     }
     
-    func Any() -> Bool {
+    public func Any() -> Bool {
         return Count > 0;
     }
     
-    func Any(predicate: (T) -> Bool) -> Bool {
+    public func Any(predicate: (T) -> Bool) -> Bool {
         return self.Where(predicate).Any();
     }
     
-    func First() -> T {
+    public func First() -> T {
         return self.Objects.First();
     }
     
-    func First(predicate: (T) -> Bool) -> T {
+    public func First(predicate: (T) -> Bool) -> T {
         return self.Objects.First(predicate);
     }
     
-    func FirstOrDefault() -> T? {
+    public func FirstOrDefault() -> T? {
         return self.Objects.FirstOrDefault();
     }
     
-    func FirstOrDefault(predicate: (T) -> Bool) -> T? {
+    public func FirstOrDefault(predicate: (T) -> Bool) -> T? {
         return self.Objects.FirstOrDefault(predicate);
     }
 }

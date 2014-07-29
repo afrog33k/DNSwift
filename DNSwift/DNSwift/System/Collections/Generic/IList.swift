@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol IList: ICollection {
+public protocol IList: ICollection {
     typealias T;
     var Count: Int { get };
     
