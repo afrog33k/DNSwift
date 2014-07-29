@@ -11,7 +11,8 @@ import Foundation
 class List<E where E:Equatable>: IList {
     typealias T = E;
     
-    var Objects: [T];
+    private var Objects: [T];
+    
     var Count: Int {
         get {
             return Objects.count

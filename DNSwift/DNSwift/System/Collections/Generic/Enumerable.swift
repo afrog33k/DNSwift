@@ -9,7 +9,7 @@
 import Foundation
 
 class Enumerable<T> : IEnumerable {
-    var Objects: Array<T>;
+    private var Objects: Array<T>;
     
     init() { self.Objects = Array<T>(); }
     
