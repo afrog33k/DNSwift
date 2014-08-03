@@ -1,6 +1,6 @@
 //
-//  System_Collections_GenericTests.swift
-//  System.Collections.GenericTests
+//  SystemCollectionsGenericTests.swift
+//  SystemCollectionsGenericTests
 //
 //  Created by Matthew S on 8/2/14.
 //  Copyright (c) 2014 Matthew S. All rights reserved.
@@ -9,7 +9,7 @@
 import UIKit
 import XCTest
 
-class System_Collections_GenericTests: XCTestCase {
+class SystemCollectionsGenericTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
