@@ -1,4 +1,5 @@
 import Foundation
+import DNSwift
 
 public class List<E where E:Equatable>: IList {
     typealias T = E;
@@ -6,9 +7,9 @@ public class List<E where E:Equatable>: IList {
     private var Objects: [T];
     
     public var Count: Int {
-        get {
-            return Objects.count
-        }
+    get {
+        return Objects.count
+    }
     };
     public var Capacity: Int; //todo: consider implementing this
     
@@ -22,7 +23,7 @@ public class List<E where E:Equatable>: IList {
         Capacity = Int.max;
         self.Objects = objs;
     }
-
+    
     //IEnumerable
     public func GetEnumerator<IE where IE:IEnumerator>() -> IE {
         return Enumerator(objs: Objects) as IE;
@@ -229,14 +230,14 @@ public class List<E where E:Equatable>: IList {
     
     //TrimExcess
     
-    public func TrueForAll(predicate: (T) -> Bool) -> Bool {
+    /*public func TrueForAll(predicate: (T) -> Bool) -> Bool {
         return self.Where(predicate).Count == self.Count;
-    }
+    }*/
     
     //Extension methods
     
     public func Where(predicate: (T) -> Bool) -> List<T> {
-        return List(objs: self.Objects.Where(predicate));
+        return List(objs: self.Objects.filter(predicate));
     }
     
     public func Last() -> T { //TODO nil check/count == 0
@@ -252,18 +253,18 @@ public class List<E where E:Equatable>: IList {
     }
     
     public func First() -> T {
-        return self.Objects.First();
+        return self.Objects[0];
     }
     
     public func First(predicate: (T) -> Bool) -> T {
-        return self.Objects.First(predicate);
+        return self.Where(predicate).First();
     }
     
-    public func FirstOrDefault() -> T? {
+    /*public func FirstOrDefault() -> T? {
         return self.Objects.FirstOrDefault();
     }
     
     public func FirstOrDefault(predicate: (T) -> Bool) -> T? {
         return self.Objects.FirstOrDefault(predicate);
-    }
+    }*/
 }

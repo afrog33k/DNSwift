@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Matthew S. All rights reserved.
 //
 
-import DNSwift;
+//import DNSwift;
 import XCTest;
 
 class ArrayExtensionTests: XCTestCase {
@@ -36,7 +36,7 @@ class ArrayExtensionTests: XCTestCase {
     func testArrayCount() {
         XCTAssertEqual(arr.Count(), 4);
     }
-    
+    /*
     func testArrayCountWithPredicate() {
         XCTAssertEqual(arr.Count({ item in item == "one" || item == "two" }), 2);
     }
@@ -66,5 +66,5 @@ class ArrayExtensionTests: XCTestCase {
         
         var emptyArr: [String] = [];
         XCTAssertNil(arr.FirstOrDefault({ item in !item.Contains("o") && !item.Contains("e") }));
-    }
+    }*/
 }

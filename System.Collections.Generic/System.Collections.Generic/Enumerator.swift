@@ -10,9 +10,9 @@ import Foundation
 
 public class Enumerator<T> : IEnumerator {
     public var Current: T {
-        get {
-            return Objects[CurrentIndex];
-        }
+    get {
+        return Objects[CurrentIndex];
+    }
     }
     
     public var CurrentIndex = 0;
