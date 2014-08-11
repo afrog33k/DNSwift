@@ -1,15 +1,15 @@
 //
-//  DNSwift_SystemTests.swift
-//  DNSwift.SystemTests
+//  SystemTests.swift
+//  SystemTests
 //
-//  Created by Matthew S on 7/28/14.
+//  Created by Matthew S on 8/10/14.
 //  Copyright (c) 2014 Matthew S. All rights reserved.
 //
 
 import UIKit
 import XCTest
 
-class DNSwift_SystemTests: XCTestCase {
+class SystemTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
