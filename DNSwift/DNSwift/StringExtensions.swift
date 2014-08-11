@@ -15,7 +15,7 @@ public extension String {
         return String(Array(self)[i]);
     }
     
-    public subscript (r: Range<Int>) -> String {
+    public subscript (r: Range<Int>) -> String { //TODO: tests are failing on this in XCode 6 B5, check it out
         var start = advance(startIndex, r.startIndex);
         var end = advance(startIndex, r.endIndex);
         return substringWithRange(Range(start: start, end: end));
